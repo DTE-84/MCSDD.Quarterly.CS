@@ -64,11 +64,11 @@ const App = () => {
           </div>
           <span className="font-heading font-extrabold text-xl tracking-tight uppercase">MCSDD // <span className="text-kinetic-green">Quarterly Pro</span></span>
         </div>
-        <div className="hidden md:flex gap-8 items-center text-xs font-bold uppercase tracking-widest text-text-secondary">
-          <a href="#problem" className="hover:text-kinetic-green transition-colors">Failure Signal</a>
-          <a href="#solution" className="hover:text-kinetic-green transition-colors">Architecture</a>
-          <a href="#telemetry" className="hover:text-kinetic-green transition-colors">Telemetry</a>
-          <a href="#synthesis" className="hover:text-kinetic-green transition-colors">Synthesis</a>
+        <div className="hidden md:flex gap-8 items-center text-xs font-bold uppercase tracking-widest">
+          <a href="#problem" className="nav-link">Failure Signal</a>
+          <a href="#solution" className="nav-link">Architecture</a>
+          <a href="#telemetry" className="nav-link">Telemetry</a>
+          <a href="#synthesis" className="nav-link">Synthesis</a>
           <button className="btn-primary py-2 text-[10px]">Portal Uplink <ArrowRight size={12} /></button>
         </div>
       </nav>

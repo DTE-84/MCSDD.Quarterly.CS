@@ -112,6 +112,33 @@ h1, h2, h3, h4 {
   background: var(--kinetic-green);
 }
 
+.nav-link {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  transition: all 0.4s var(--transition);
+  position: relative;
+}
+
+.nav-link:hover {
+  color: #fff;
+  text-shadow: 0 0 15px rgba(0, 255, 65, 0.5);
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0%;
+  height: 1px;
+  background: linear-gradient(90deg, var(--kinetic-green), #fff);
+  transition: width 0.4s var(--transition);
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
 /* Animations Helper */
 .reveal {
   opacity: 0;

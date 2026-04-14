@@ -69,7 +69,14 @@ const App = () => {
           <a href="#solution" className="nav-link">Architecture</a>
           <a href="#telemetry" className="nav-link">Telemetry</a>
           <a href="#synthesis" className="nav-link">Synthesis</a>
-          <button className="btn-primary py-2 text-[10px]">Portal Uplink <ArrowRight size={12} /></button>
+          <a 
+            href="https://dte-84.github.io/MCSDDQuarterly/" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="btn-primary py-2 text-[10px]"
+          >
+            Portal Uplink <ArrowRight size={12} />
+          </a>
         </div>
       </nav>
 
@@ -84,7 +91,14 @@ const App = () => {
           A high-fidelity compliance engine automating Missouri DMH reporting standards through deterministic validation and PCSP data inheritance.
         </p>
         <div className="hero-reveal flex gap-4">
-          <a href="#solution" className="btn-primary">Explore Solution</a>
+          <a 
+            href="https://dte-84.github.io/MCSDDQuarterly/" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="btn-primary"
+          >
+            Launch Portal
+          </a>
           <button className="px-6 py-3 rounded-md bg-white/5 border border-white/10 text-xs font-bold uppercase tracking-widest hover:bg-white/10 transition-colors">Technical Deep Dive</button>
         </div>
       </section>

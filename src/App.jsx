@@ -146,7 +146,7 @@ const App = () => {
         </div>
         <div className="reveal max-w-6xl mx-auto rounded-xl border border-white/5 overflow-hidden shadow-2xl relative">
           <div className="absolute inset-0 bg-gradient-to-t from-[#050505] to-transparent z-10" />
-          <img src="/assets/compliance_dashboard_mockup.png" alt="Dashboard Mockup" className="w-full grayscale hover:grayscale-0 transition-all duration-700 hover:scale-[1.02]" />
+          <img src="assets/compliance_dashboard_mockup.png" alt="Dashboard Mockup" className="w-full grayscale hover:grayscale-0 transition-all duration-700 hover:scale-[1.02]" />
         </div>
       </section>
 
@@ -186,7 +186,7 @@ const App = () => {
          <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-16 items-center">
              <div className="reveal glass-card bg-[#0a0a0a]">
-                <img src="/assets/compliance_logic_diagram.png" alt="Logic Diagram" className="rounded-lg border border-white/5" />
+                <img src="assets/compliance_logic_diagram.png" alt="Logic Diagram" className="rounded-lg border border-white/5" />
              </div>
              <div className="reveal">
                 <h2 className="text-4xl mb-6">Zero-Footprint <span className="text-[#00ff41]">Architecture</span></h2>

@@ -1,0 +1,228 @@
+:root {
+    --bg-dark: #050505;
+    --bg-card: #0f0f0f;
+    --bg-gray: #1a1a1a;
+    --gold: #c9a84c;
+    --gold-dim: rgba(201, 168, 76, 0.15);
+    --text-base: #f4f1eb;
+    --text-muted: #888;
+    --border: rgba(255, 255, 255, 0.08);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    background: var(--bg-dark);
+    color: var(--text-base);
+    font-family: 'Outfit', sans-serif;
+    line-height: 1.7;
+    padding: 80px 20px;
+}
+
+.font-display { font-family: 'Cormorant Garamond', serif; }
+.gold-text { color: var(--gold); }
+.dim-text { color: var(--text-muted); font-size: 0.8em; }
+
+.case-study-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* ── Header ── */
+.project-header {
+    margin-bottom: 80px;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 40px;
+}
+
+.metadata {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.meta-item {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.meta-item span {
+    display: block;
+    color: var(--gold);
+    font-weight: 800;
+    margin-bottom: 4px;
+}
+
+.project-header h1 {
+    font-size: 4rem;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.mission-statement {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    max-width: 700px;
+}
+
+/* ── Content Nodes ── */
+.content-node {
+    margin-bottom: 100px;
+}
+
+.node-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.2rem;
+    margin-bottom: 35px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.node-title::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+}
+
+.gold-border {
+    border-left: 2px solid var(--gold);
+    padding-left: 40px;
+}
+
+.bullet-list {
+    list-style: none;
+    margin-top: 30px;
+}
+
+.bullet-list li {
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 25px;
+}
+
+.bullet-list li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--gold);
+}
+
+/* ── Solutions ── */
+.solution-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.sol-item {
+    padding: 30px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+}
+
+.sol-item h4 {
+    color: var(--gold);
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.sol-item p {
+    font-size: 14px;
+    color: var(--text-muted);
+}
+
+/* ── Telemetry ── */
+.telemetry-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.tel-item {
+    text-align: center;
+    padding: 40px 20px;
+    background: var(--gold-dim);
+    border: 1px solid var(--gold);
+    border-radius: 12px;
+}
+
+.tel-val {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--gold);
+    margin-bottom: 10px;
+}
+
+.tel-label {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.disclaimer {
+    font-size: 11px;
+    color: var(--text-muted);
+    font-style: italic;
+    text-align: center;
+}
+
+/* ── Synthesis ── */
+.gray-bg {
+    background: var(--bg-gray);
+    padding: 60px;
+    border-radius: 16px;
+}
+
+.synthesis-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.8rem;
+    line-height: 1.4;
+    font-style: italic;
+    margin-bottom: 40px;
+}
+
+.founder-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.founder-block strong {
+    color: var(--gold);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+.founder-block span {
+    font-size: 12px;
+    color: var(--text-muted);
+}
+
+/* ── Footer ── */
+.cs-footer {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.gold-link {
+    color: var(--gold);
+    text-decoration: none;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 1px solid var(--gold);
+    padding-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+    .solution-grid, .telemetry-grid { grid-template-columns: 1fr; }
+    .project-header h1 { font-size: 2.5rem; }
+    .gray-bg { padding: 30px; }
+}

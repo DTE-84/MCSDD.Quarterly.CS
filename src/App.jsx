@@ -55,20 +55,20 @@ const App = () => {
   }, []);
 
   return (
-    <main ref={mainRef} className="bg-[#050505] min-h-screen text-[#f0f0f0]">
+    <main ref={mainRef} className="bg-obsidian min-h-screen text-text-primary">
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-50 px-8 py-6 flex justify-between items-center backdrop-blur-md border-b border-white/5">
         <div className="flex items-center gap-2">
           <div className="w-8 h-8 rounded bg-kinetic-green/20 border border-kinetic-green flex items-center justify-center">
-            <ShieldCheck className="text-[#00ff41] w-5 h-5" />
+            <ShieldCheck className="text-kinetic-green w-5 h-5" />
           </div>
-          <span className="font-heading font-extrabold text-xl tracking-tight uppercase">MCSDD // <span className="text-[#00ff41]">Quarterly Pro</span></span>
+          <span className="font-heading font-extrabold text-xl tracking-tight uppercase">MCSDD // <span className="text-kinetic-green">Quarterly Pro</span></span>
         </div>
         <div className="hidden md:flex gap-8 items-center text-xs font-bold uppercase tracking-widest text-text-secondary">
-          <a href="#problem" className="hover:text-[#00ff41] transition-colors">Failure Signal</a>
-          <a href="#solution" className="hover:text-[#00ff41] transition-colors">Architecture</a>
-          <a href="#telemetry" className="hover:text-[#00ff41] transition-colors">Telemetry</a>
-          <a href="#synthesis" className="hover:text-[#00ff41] transition-colors">Synthesis</a>
+          <a href="#problem" className="hover:text-kinetic-green transition-colors">Failure Signal</a>
+          <a href="#solution" className="hover:text-kinetic-green transition-colors">Architecture</a>
+          <a href="#telemetry" className="hover:text-kinetic-green transition-colors">Telemetry</a>
+          <a href="#synthesis" className="hover:text-kinetic-green transition-colors">Synthesis</a>
           <button className="btn-primary py-2 text-[10px]">Portal Uplink <ArrowRight size={12} /></button>
         </div>
       </nav>
@@ -99,9 +99,9 @@ const App = () => {
             { label: 'Data Re-Entry', value: '0%', sub: 'Eliminated Overhead', icon: Cpu },
           ].map((item, i) => (
             <div key={i} className="reveal glass-card flex flex-col items-center justify-center group text-center">
-              <item.icon className="text-[#00ff41] mb-4 w-8 h-8 opacity-50 group-hover:opacity-100 transition-opacity" />
-              <div className="text-4xl font-heading font-extrabold mb-1 text-[#00ff41]">{item.value}</div>
-              <p className="text-[10px] text-[#00ff41] uppercase tracking-widest font-black mb-2">{item.label}</p>
+              <item.icon className="text-kinetic-green mb-4 w-8 h-8 opacity-50 group-hover:opacity-100 transition-opacity" />
+              <div className="text-4xl font-heading font-extrabold mb-1 text-kinetic-green">{item.value}</div>
+              <p className="text-[10px] text-kinetic-green uppercase tracking-widest font-black mb-2">{item.label}</p>
               <p className="text-[9px] text-text-secondary uppercase tracking-tighter italic">{item.sub}</p>
             </div>
           ))}
@@ -115,7 +115,7 @@ const App = () => {
       <section id="problem" className="px-8 py-32 bg-surface/50 border-y border-white/5">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
           <div className="reveal">
-            <h2 className="text-4xl md:text-5xl mb-8 font-heading italic">The <span className="text-[#00ff41]">Failure</span> Signal</h2>
+            <h2 className="text-4xl md:text-5xl mb-8 font-heading italic">The <span className="text-kinetic-green">Failure</span> Signal</h2>
             <p className="text-text-secondary mb-8 text-lg leading-relaxed">
               Manual quarterly reporting in Marion County operated on a high-entropy protocol. Support Coordinators faced administrative bloat, spending significant cycles on redundant data transcription, resulting in a ~40% estimated audit rejection rate due to three critical deviations:
             </p>
@@ -142,7 +142,7 @@ const App = () => {
              <blockquote className="text-2xl font-heading italic text-text-primary leading-relaxed mb-6">
                "I was spending 45+ minutes just recalculating units and trying to remember what we reported last quarter. Then it would get sent back for tone issues."
              </blockquote>
-             <cite className="text-xs uppercase tracking-[0.2em] font-black text-[#00ff41]">— Case Manager, MCSDD</cite>
+             <cite className="text-xs uppercase tracking-[0.2em] font-black text-kinetic-green">— Case Manager, MCSDD</cite>
           </div>
         </div>
       </section>
@@ -151,7 +151,7 @@ const App = () => {
       <section id="solution" className="px-8 py-32">
         <div className="max-w-7xl mx-auto text-center mb-24">
           <div className="reveal badge mb-6">Architectural Shield</div>
-          <h2 className="reveal text-5xl md:text-6xl mb-8 font-heading italic">Validation <span className="text-[#00ff41]">Architecture</span></h2>
+          <h2 className="reveal text-5xl md:text-6xl mb-8 font-heading italic">Validation <span className="text-kinetic-green">Architecture</span></h2>
           <p className="reveal text-text-secondary text-xl max-w-3xl mx-auto leading-relaxed font-medium">
             Quarterly Pro was architected as a satellite node to the PCSP Pro ecosystem, leveraging data inheritance and a 5-point validation engine to ensure audit finality.
           </p>
@@ -180,9 +180,9 @@ const App = () => {
               icon: ShieldCheck
             }
           ].map((f, i) => (
-            <div key={i} className="reveal glass-card flex flex-col items-start hover:border-[#00ff41]/50 group h-full">
+            <div key={i} className="reveal glass-card flex flex-col items-start hover:border-kinetic-green/50 group h-full">
               <div className="w-12 h-12 rounded bg-kinetic-green/10 border border-kinetic-green/20 flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
-                <f.icon className="text-[#00ff41] w-6 h-6" />
+                <f.icon className="text-kinetic-green w-6 h-6" />
               </div>
               <h3 className="text-lg font-bold uppercase tracking-widest mb-4">{f.title}</h3>
               <p className="text-sm text-text-secondary leading-relaxed">{f.desc}</p>
@@ -196,8 +196,8 @@ const App = () => {
          <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-24 items-center">
              <div className="reveal relative">
-                <div className="absolute inset-0 bg-[#00ff41]/5 blur-[100px] -z-10" />
-                <div className="glass-card bg-[#0a0a0a] p-0 border-white/10 overflow-hidden shadow-2xl">
+                <div className="absolute inset-0 bg-kinetic-green/5 blur-[100px] -z-10" />
+                <div className="glass-card bg-surface p-0 border-white/10 overflow-hidden shadow-2xl">
                    <div className="px-6 py-4 border-b border-white/5 bg-white/5 flex gap-2">
                       <div className="w-2 h-2 rounded-full bg-red-500/50" />
                       <div className="w-2 h-2 rounded-full bg-yellow-500/50" />
@@ -226,7 +226,7 @@ const App = () => {
                 </div>
              </div>
              <div className="reveal">
-                <h2 className="text-4xl mb-8 font-heading italic">Zero-Footprint <span className="text-[#00ff41]">Integrity</span></h2>
+                <h2 className="text-4xl mb-8 font-heading italic">Zero-Footprint <span className="text-kinetic-green">Integrity</span></h2>
                 <div className="space-y-10">
                   {[
                     { label: 'Security Node', title: 'Volatile RAM Processing', desc: 'All computation occurs in browser memory with 4-second debounced auto-save encryption.' },
@@ -234,8 +234,8 @@ const App = () => {
                     { label: 'Synthesis Node', title: 'XML Generation Pipeline', desc: 'Audit-ready .docx synthesis generated client-side via custom OOXML injection engine.' }
                   ].map((item, i) => (
                     <div key={i} className="group">
-                      <h4 className="text-[#00ff41] text-[10px] uppercase font-black tracking-[0.2em] mb-3 opacity-70 group-hover:opacity-100 transition-opacity flex items-center gap-2">
-                        <div className="w-4 h-[1px] bg-[#00ff41]" /> {item.label}
+                      <h4 className="text-kinetic-green text-[10px] uppercase font-black tracking-[0.2em] mb-3 opacity-70 group-hover:opacity-100 transition-opacity flex items-center gap-2">
+                        <div className="w-4 h-[1px] bg-kinetic-green" /> {item.label}
                       </h4>
                       <h3 className="text-xl font-bold mb-2">{item.title}</h3>
                       <p className="text-text-secondary text-base leading-relaxed">{item.desc}</p>
@@ -250,13 +250,13 @@ const App = () => {
       {/* Analytical Synthesis */}
       <section id="synthesis" className="px-8 py-40">
         <div className="max-w-4xl mx-auto text-center reveal">
-          <div className="w-16 h-1 w-16 bg-[#00ff41] mx-auto mb-12" />
+          <div className="w-16 h-1 w-16 bg-kinetic-green mx-auto mb-12" />
           <h2 className="text-4xl md:text-5xl mb-12 font-heading italic leading-tight">
-            "Quarterly Pro transforms static clinical data into <span className="text-[#00ff41]">Living Telemetry</span>, establishing a deterministic framework for Missouri state oversight."
+            "Quarterly Pro transforms static clinical data into <span className="text-kinetic-green">Living Telemetry</span>, establishing a deterministic framework for Missouri state oversight."
           </h2>
           <div className="flex flex-col items-center">
             <div className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center mb-4">
-              <Lock className="text-[#00ff41] w-5 h-5" />
+              <Lock className="text-kinetic-green w-5 h-5" />
             </div>
             <h4 className="text-lg font-bold uppercase tracking-widest">Drew Ernst</h4>
             <p className="text-xs text-text-secondary uppercase tracking-[0.3em] font-black italic">Lead Architect | DTE Solutions</p>
@@ -270,9 +270,9 @@ const App = () => {
           <div className="flex flex-col gap-2 items-center md:items-start">
             <div className="flex items-center gap-2">
               <div className="w-6 h-6 rounded bg-kinetic-green/20 border border-kinetic-green flex items-center justify-center">
-                <ShieldCheck className="text-[#00ff41] w-4 h-4" />
+                <ShieldCheck className="text-kinetic-green w-4 h-4" />
               </div>
-              <span className="font-heading font-extrabold text-xl tracking-tight uppercase">DREW <span className="text-[#00ff41]">ERNST</span></span>
+              <span className="font-heading font-extrabold text-xl tracking-tight uppercase">DREW <span className="text-kinetic-green">ERNST</span></span>
             </div>
             <p className="text-[10px] text-text-secondary uppercase tracking-widest opacity-50 italic">Data Integrity & Systems Engineering</p>
           </div>
@@ -283,7 +283,7 @@ const App = () => {
               { icon: Globe, label: 'LinkedIn', url: 'https://linkedin.com/in/dte84' },
               { icon: Mail, label: 'Secure Uplink', url: 'mailto:drew.t.ernst@gmail.com' }
             ].map((link, i) => (
-              <a key={i} href={link.url} className="flex flex-col items-center gap-2 text-text-secondary hover:text-[#00ff41] transition-all group">
+              <a key={i} href={link.url} className="flex flex-col items-center gap-2 text-text-secondary hover:text-kinetic-green transition-all group">
                 <link.icon size={20} className="group-hover:scale-110 transition-transform" />
                 <span className="text-[9px] uppercase font-bold tracking-widest">{link.label}</span>
               </a>

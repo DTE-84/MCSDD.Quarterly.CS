@@ -153,7 +153,7 @@ const App = () => {
           </div>
           <div className="reveal glass-card border-l-4 border-l-red-500/50 p-2 relative overflow-hidden flex items-center justify-center bg-surface/50">
              <img 
-               src=".public/MCSDDQUARTERLYPRO.png" 
+               src="/MCSDD.Quarterly.CS/MCSDDQUARTERLYPRO.png" 
                alt="MCSDD Quarterly Pro Interface" 
                className="w-full h-auto rounded shadow-2xl opacity-90 group-hover:opacity-100 transition-opacity"
              />

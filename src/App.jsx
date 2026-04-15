@@ -151,12 +151,11 @@ const App = () => {
               ))}
             </div>
           </div>
-          <div className="reveal glass-card border-l-4 border-l-red-500/50 p-12 relative overflow-hidden">
+          <div className="reveal glass-card border-l-4 border-l-red-500/50 p-12 relative overflow-hidden flex flex-col justify-center">
              <div className="absolute top-0 right-0 p-4 opacity-10"><AlertCircle size={80} /></div>
-             <blockquote className="text-2xl font-heading italic text-text-primary leading-relaxed mb-6">
-               "I was spending 45+ minutes just recalculating units and trying to remember what we reported last quarter. Then it would get sent back for tone issues."
-             </blockquote>
-             <cite className="text-xs uppercase tracking-[0.2em] font-black text-gold">— Case Manager, MCSDD</cite>
+             <h3 className="text-2xl font-heading italic text-text-primary leading-relaxed">
+               Establishing deterministic benchmarks to eliminate manual calculation errors and clinical narrative drift.
+             </h3>
           </div>
         </div>
       </section>

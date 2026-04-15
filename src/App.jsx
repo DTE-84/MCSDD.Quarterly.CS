@@ -99,7 +99,7 @@ const App = () => {
           >
             Launch Portal
           </a>
-          <button className="px-6 py-3 rounded-md bg-white/5 border border-white/10 text-xs font-bold uppercase tracking-widest hover:bg-white/10 transition-colors">Technical Deep Dive</button>
+          <button className="px-6 py-3 rounded-md bg-white/5 border border-white/10 text-xs font-bold uppercase tracking-widest hover:bg-white/10 transition-colors"></button>
         </div>
       </section>
 
@@ -151,11 +151,13 @@ const App = () => {
               ))}
             </div>
           </div>
-          <div className="reveal glass-card border-l-4 border-l-red-500/50 p-12 relative overflow-hidden flex flex-col justify-center">
-             <div className="absolute top-0 right-0 p-4 opacity-10"><AlertCircle size={80} /></div>
-             <h3 className="text-2xl font-heading italic text-text-primary leading-relaxed">
-               Establishing deterministic benchmarks to eliminate manual calculation errors and clinical narrative drift.
-             </h3>
+          <div className="reveal glass-card border-l-4 border-l-red-500/50 p-2 relative overflow-hidden flex items-center justify-center bg-surface/50">
+             <img 
+               src="/MCSDDQUARTERLYPRO.png" 
+               alt="MCSDD Quarterly Pro Interface" 
+               className="w-full h-auto rounded shadow-2xl opacity-90 group-hover:opacity-100 transition-opacity"
+             />
+             <div className="absolute top-0 right-0 p-4 opacity-10 pointer-events-none"><AlertCircle size={40} /></div>
           </div>
         </div>
       </section>

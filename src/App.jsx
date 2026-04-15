@@ -168,30 +168,30 @@ const App = () => {
           <div className="reveal badge mb-6">Architectural Shield</div>
           <h2 className="reveal text-5xl md:text-6xl mb-8 font-heading italic">Validation <span className="text-gold">Architecture</span></h2>
           <p className="reveal text-text-secondary text-xl max-w-3xl mx-auto leading-relaxed font-medium">
-            Quarterly Pro was architected as a satellite node to the PCSP Pro ecosystem, leveraging data inheritance and a 5-point validation engine to ensure audit finality.
+            Quarterly Pro acts as a deterministic middleware, sanitizing PCSP data against the April 2026 EVV Hard Launch and Oct 2025 HRST mandates to ensure 100% audit finality.
           </p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
           {[
             { 
-              title: 'Similarity Engine', 
-              desc: 'Word-overlap algorithm flagging static narratives >85% match to prevent citations.',
+              title: 'EVV Synchronizer', 
+              desc: 'Hard Launch protocol matching service units to EAS (EVV Aggregator Solution) records to prevent instant claim denials.',
               icon: Search
             },
             { 
-              title: 'Tone Command', 
-              desc: 'NLP layer identifying and suggesting person-centered linguistic alternatives.',
+              title: 'HRST Attestation', 
+              desc: 'Oct 2025 compliance node enforcing the mandatory health risk planning team certification for every quarterly review.',
               icon: Cpu
             },
             { 
-              title: 'Variance Telemetry', 
-              desc: 'Real-time calculation of unit utilization with mandatory justification triggers.',
+              title: 'Similarity Engine', 
+              desc: 'Sanitizing narratives against "Rubber Stamping" citations—the root cause of Missouri\'s 11% unallowable error rates.',
               icon: BarChart3
             },
             { 
-              title: 'MUI Watchdog', 
-              desc: 'Dual-timestamp logic enforcing the state-mandated 24-hour reporting window.',
+              title: 'Supervisory Node', 
+              desc: 'Directly solving the 80% oversight gap through integrated monthly case review verification and digital timestamping.',
               icon: ShieldCheck
             }
           ].map((f, i) => (

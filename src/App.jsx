@@ -99,7 +99,7 @@ const App = () => {
           >
             Launch Portal
           </a>
-          <button className="px-6 py-3 rounded-md bg-white/5 border border-white/10 text-xs font-bold uppercase tracking-widest hover:bg-white/10 transition-colors"></button>
+          
         </div>
       </section>
 

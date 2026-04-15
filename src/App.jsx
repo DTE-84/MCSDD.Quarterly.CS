@@ -92,7 +92,7 @@ const App = () => {
         </p>
         <div className="hero-reveal flex gap-4">
           <a 
-            href="https://dte-84.github.io/MCSDDQuarterly/" 
+            href="https://dte-84.github.io/MCSDD.Quarterlies/" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="btn-primary"

@@ -70,7 +70,7 @@ const App = () => {
           <a href="#telemetry" className="nav-link">Telemetry</a>
           <a href="#synthesis" className="nav-link">Synthesis</a>
           <a 
-            href="https://dte-84.github.io/MCSDDQuarterly/" 
+            href="https://dte-84.github.io/MCSDD.Quarterlies/" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="btn-primary py-2 text-[10px]"
